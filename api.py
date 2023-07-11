@@ -17,10 +17,10 @@ app = Flask(__name__)
 def getUBCfRec():
     # Read in data
     ratings = pd.read_csv(
-        'C:/User/userRating.csv', encoding="latin-1")
+        'C:/xx/userRating.csv', encoding="latin-1")
 
     products = pd.read_csv(
-        'C:/Users/EBRU/Desktop/Bitirme/bitirme_api/products.csv', encoding="latin-1")
+        'C:/xx/products.csv', encoding="latin-1")
     
     df = pd.merge(ratings, products, on='name', how='inner')
     
